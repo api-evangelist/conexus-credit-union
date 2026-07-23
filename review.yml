@@ -1,0 +1,83 @@
+aid: conexus-credit-union
+name: Conexus Credit Union
+review:
+  question: Does Conexus Credit Union expose a public first-party developer API or developer portal?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Conexus Credit Union, Saskatchewan's largest cooperative credit union
+    (~$10B assets, 140,000+ members), publishes no first-party public
+    developer API and no developer portal. The developer.conexus.ca
+    subdomain does not resolve (connection failure), and the corporate site
+    returns HTTP 404 for both /developer and /api. No OpenAPI/Swagger, no
+    FDX data-access API, and no documented 1033-equivalent first-party data
+    endpoint exists. Consumer financial-data access is aggregator-mediated,
+    provided through third-party aggregators (notably Plaid in Canada) via
+    connection-based data sharing / screen-scraping, not a Conexus-operated
+    API. Digital/online banking is delivered via core-banking and fintech
+    partners at banking.online.conexus.ca. Canada's federal Consumer-Driven
+    Banking (open banking) framework, overseen by the FCAC, is legislated
+    but not yet operational, so open-finance access here remains voluntary
+    and aggregator-based — the norm for Canadian credit unions.
+  charter: Provincially regulated Saskatchewan credit union (member-owned cooperative); deposits guaranteed by the Credit Union Deposit Guarantee Corporation (CUDGC).
+  developerPortal:
+    exists: false
+    url: ''
+    note: developer.conexus.ca does not resolve; /developer and /api return HTTP 404.
+  firstPartyApi: false
+  openapiHarvested: false
+  fdxParticipant: false
+  cdbPosture: No published position on Canada's Consumer-Driven Banking framework; framework is legislated but not operational.
+  dataAccessModel: aggregator-only
+  aggregators:
+    - name: Plaid
+      note: Canadian connection coverage documented via third-party aggregator listings; screen-scraping / connection-based data sharing, not a first-party API.
+  authModel: Not applicable — no public developer API; no documented OAuth2/OIDC, API-key, or mTLS developer auth surface.
+  probes:
+    - url: https://developer.conexus.ca
+      status: 000
+      note: DNS/connection failure — subdomain does not resolve.
+    - url: https://api.conexus.ca
+      status: 000
+      note: DNS/connection failure — subdomain does not resolve.
+    - url: https://www.conexus.ca/developer
+      status: 404
+    - url: https://www.conexus.ca/api
+      status: 404
+    - url: https://www.conexus.ca/
+      status: 200
+      note: Redirects to /personal; corporate marketing site.
+    - url: https://banking.online.conexus.ca/
+      status: 200
+      note: Member online-banking login (core-banking/fintech partner platform), not a developer API.
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public REST API documented.
+    - protocol: FDX
+      documented: false
+      note: No FDX data-access API documented.
+sources:
+  - url: https://www.conexus.ca/
+    type: Website
+    note: Corporate site; no developer or API navigation present.
+  - url: https://en.wikipedia.org/wiki/Conexus_Credit_Union
+    type: Reference
+    note: Institution profile — Saskatchewan's largest credit union, cooperative charter, assets/members.
+  - url: https://www.globenewswire.com/news-release/2024/11/20/2984611/0/en/Conexus-Cornerstone-and-Synergy-Credit-Unions-Explore-Potential-Merger-Together-for-a-Thriving-Saskatchewan.html
+    type: Reference
+    note: Nov 2024 announcement of proposed Conexus/Cornerstone/Synergy merger.
+  - url: https://fintable.io/coverage/banks/Canada/25739_conexus-credit-union-online-banking
+    type: Reference
+    note: Third-party aggregator (Plaid) coverage listing for Conexus online banking — evidences aggregator-mediated access.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only bootstrap. No public first-party API, no developer portal,
+    no downloadable spec. apis[] left empty (honest). Common properties point
+    only to verified live pages (Website, Online Banking, LinkedIn, Member
+    News, Support, Legal, Privacy, Security). Open-finance posture recorded
+    as aggregator-only pending Canada's not-yet-operational Consumer-Driven
+    Banking framework.

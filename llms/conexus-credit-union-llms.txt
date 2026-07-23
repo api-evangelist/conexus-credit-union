@@ -1,0 +1,24 @@
+# Conexus Credit Union
+
+> Conexus Credit Union is Saskatchewan's largest credit union, a member-owned cooperative financial institution headquartered in Regina with over $10 billion in consolidated assets, more than 140,000 members, and roughly 30 branches across the province. Conexus does not publish a first-party public developer API or developer portal — consumer financial-data access is aggregator-mediated (notably Plaid in Canada) under Canada's not-yet-operational Consumer-Driven Banking (open banking) framework.
+
+## About
+
+- [Conexus Credit Union website](https://www.conexus.ca/): Corporate and member-facing site.
+- [Online Banking](https://banking.online.conexus.ca/): Digital and online banking delivered through core-banking and fintech partners.
+- [Member news / blog](https://www.conexus.ca/about-us/meet-conexus/news/member-news): Announcements and member news.
+- [LinkedIn](https://www.linkedin.com/company/conexus-credit-union): Company profile.
+
+## Support & Legal
+
+- [Support](https://www.conexus.ca/support): Member help and contact.
+- [Security](https://www.conexus.ca/security): Consumer security information.
+- [Terms of Service](https://www.conexus.ca/legal): Legal terms.
+- [Privacy Policy](https://www.conexus.ca/privacy): Privacy policy.
+
+## Developer surface
+
+- No first-party public API: developer.conexus.ca does not resolve, and /developer and /api on the corporate site return 404.
+- No /.well-known/ discovery documents (security.txt, OIDC, OAuth, api-catalog, ai-plugin all 404).
+- Financial-data access for members is provided through third-party aggregators (e.g. Plaid) via connection-based data sharing, not a first-party API.
+- Canada's federal Consumer-Driven Banking (open banking) framework, overseen by the FCAC, is legislated but not yet operational; open-finance access remains voluntary and aggregator-mediated.

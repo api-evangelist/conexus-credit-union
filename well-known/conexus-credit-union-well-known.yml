@@ -1,0 +1,27 @@
+generated: '2026-07-23'
+method: probed
+source: live probes of /.well-known/* on conexus.ca hosts
+note: >-
+  No /.well-known/ discovery documents are published on any Conexus host. Conexus
+  operates no first-party public developer API or portal, so there is no
+  OAuth/OIDC discovery, security.txt, api-catalog, or ai-plugin surface. Absence
+  recorded as valid data.
+hosts:
+- host: https://www.conexus.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://banking.online.conexus.ca
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404

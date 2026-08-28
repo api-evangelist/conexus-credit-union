@@ -21,6 +21,17 @@ description: >-
   federal Consumer-Driven Banking (open banking) framework, overseen by the
   Financial Consumer Agency of Canada (FCAC), is legislated but not yet operational,
   so Conexus's open-finance access remains voluntary and aggregator-mediated today.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial-Services

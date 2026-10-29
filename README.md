@@ -1,4 +1,4 @@
-# Conexus Credit Union (conexus-credit-union)
+# Conexus Credit Union
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,50 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Conexus Credit Union is Saskatchewan's largest credit union — a member-owned cooperative financial institution headquartered in Regina with over $10 billion in consolidated assets, more than 140,000 members, roughly 30 branches, and 800+ employees. It operates under a Saskatchewan cooperative charter with member deposits guaranteed by the Credit Union Deposit Guarantee Corporation (CUDGC). In November 2024 Conexus announced its intent to explore a merger with Cornerstone and Synergy credit unions.
+Conexus Credit Union is Saskatchewan's largest credit union, a member-owned cooperative financial institution headquartered in Regina with over $10 billion in consolidated assets under management, more than 140,000 members, roughly 30 branches, and over 800 employees across the province. As a provincially regulated Saskatchewan credit union it operates under a cooperative charter, with member deposits guaranteed by the Credit Union Deposit Guarantee Corporation (CUDGC). In November 2024 Conexus announced its intent to explore a merger with Cornerstone and Synergy credit unions. Conexus does not publish a first-party public developer API or a developer portal; developer.conexus.ca does not resolve, and /developer and /api on the corporate site return 404. Consumer financial-data access is provided through third-party aggregators (notably Plaid in Canada) via screen-scraping and connection-based data sharing rather than a first-party API. Digital and online banking are delivered through core-banking and fintech partners (banking.online.conexus.ca), and investing runs through the credit-union system's Aviso Wealth / Qtrade and Thrive Wealth partners. Canada's federal Consumer-Driven Banking (open banking) framework, overseen by the Financial Consumer Agency of Canada (FCAC), is legislated but not yet operational, so Conexus's open-finance access remains voluntary and aggregator-mediated today.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/conexus-credit-union/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/conexus-credit-union/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Credit Union · Cooperative · Saskatchewan · Open Banking
 
-## Open-Finance Posture
+## Conexus Credit Union on APIs.io
 
-Conexus does **not** publish a first-party public developer API or a developer portal. `developer.conexus.ca` does not resolve, and the corporate site returns 404 for `/developer` and `/api`. There is no downloadable OpenAPI/Swagger, no FDX data-access API, and no documented 1033-equivalent first-party data endpoint.
+Everything profiled for Conexus Credit Union is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/conexus-credit-union/](https://apis.io/providers/conexus-credit-union/)** — or go straight to one of the APIs or properties below.
 
-Consumer financial-data access today is **aggregator-mediated**: connection-based data sharing / screen-scraping via third-party aggregators (notably **Plaid** in Canada), rather than a Conexus-operated API. Digital and online banking are delivered through core-banking and fintech partners at `banking.online.conexus.ca`, and investing runs through the Canadian credit-union system's Aviso Wealth / Qtrade and Thrive Wealth partners.
+### Published properties
 
-Canada's federal **Consumer-Driven Banking** (open banking) framework — legislated in Budget 2024 / the 2024 Fall Economic Statement and overseen by the Financial Consumer Agency of Canada (FCAC) — is **not yet operational**. Open-finance access at Conexus therefore remains voluntary and aggregator-based, which is the norm for Canadian credit unions.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (1)
 
-- Financial Services
-- Banking
-- Canada
-- Credit Union
-- Cooperative
-- Saskatchewan
-- Data Aggregation
-- Open Banking
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Conexus Credit Union Domain Security](https://apis.io/security/conexus-credit-union/conexus-credit-union-domain-security/)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+## Where to find this API
 
-## APIs
-
-No public first-party APIs are documented. This record is identity-only; see the open-finance posture above.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.conexus.ca/)
-- [Online Banking](https://banking.online.conexus.ca/)
-- [LinkedIn](https://www.linkedin.com/company/conexus-credit-union)
-- [Blog / Member News](https://www.conexus.ca/about-us/meet-conexus/news/member-news)
 - [Support](https://www.conexus.ca/support)
-- [Terms / Legal](https://www.conexus.ca/legal)
-- [Privacy](https://www.conexus.ca/privacy)
+- [Blog](https://www.conexus.ca/about-us/meet-conexus/news/member-news)
 - [Security](https://www.conexus.ca/security)
+- [Terms of service](https://www.conexus.ca/legal)
+- [Privacy policy](https://www.conexus.ca/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 11.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/conexus-credit-union/](https://apis.io/providers/conexus-credit-union/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Conexus Credit Union: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/conexus-credit-union/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
